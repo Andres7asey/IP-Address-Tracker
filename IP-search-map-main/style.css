@@ -1,0 +1,200 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor_de_map {
+    height: 70%;
+    width: 100%;
+    z-index: 1;
+}
+#map {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    
+}
+.banner {
+    width: 100%;
+    height: 30%;
+    background-image: url(./images/pattern-bg-desktop.png);
+    z-index: 2;
+
+}
+
+
+h1 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    letter-spacing: .5px;
+    margin-top: 20px;
+}
+
+
+.contenedor_de_input{
+position: relative;
+padding-top: 0px;
+}
+
+.search-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#inputIP {
+    width: 60%;
+    height: 3rem;
+    border-radius: 15px 0 0 15px;
+    border: none;
+    padding-left: 2rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    outline: none;
+}
+
+#btnIP {
+    width: 6%;
+    height: 3rem;
+    border-radius: 0 15px 15px 0;
+    border: none;
+    background-color: #000000;
+}
+
+#btnIP i {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.info-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem 10%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transform: translate(0px,20px);
+   
+}
+.info-item {
+    
+    width: 25%;
+    padding: 1.5rem;
+    border-right: 1px solid #EAEAEA;
+    margin-top: 2px;
+}
+
+p {
+    padding-top: 5px;
+}
+
+.info-item:last-child {
+    border-right: none;
+}
+
+.info-label {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #969696;
+    letter-spacing: .5px;
+}
+
+.info-value {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #000000;
+    letter-spacing: .5px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .contenedor_de_input{
+        position: relative;
+        padding-top: 0px;
+        }
+        
+    #inputIP {
+        width: 70%;
+        height: 2.5rem;
+        padding-left: 1rem;
+        font-size: 0.8rem;
+    }
+
+    #btnIP {
+        width: 10%;
+        height: 2.5rem;
+        border-radius: 0 10px 10px 0;
+        font-weight: 500;
+    }
+
+    #btnIP i {
+        font-size: 1rem;
+    }
+
+    .info-box {
+        margin: 1rem 5%;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        border-radius: 15px;
+    }
+
+    .info-item {
+        width: 90%;
+        padding: 1rem;
+        border-right: none;
+        border-bottom: 1px solid #EAEAEA; 
+    }
+
+    .info-item:last-child {
+        border-bottom: none; 
+    }
+
+    .info-label {
+        font-size: 0.7rem; 
+        font-weight: 700;
+        letter-spacing: .5px;
+    }
+
+    .info-value {
+        font-size: 0.9rem; 
+        letter-spacing: .5px;
+    }
+
+    .contenedor_de_map {
+    height: 70%;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    }
+
+    .banner{
+    z-index: 2;
+    }
+
+}
